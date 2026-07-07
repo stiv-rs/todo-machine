@@ -1,7 +1,13 @@
+import './TodoSearch.css';
+
 function TodoSearch() {
   return (
-    <div>
-      <input type="text" placeholder="Buscar" />
+    <div className="TodoSearch">
+      <input
+        className="TodoSearch__input"
+        type="text"
+        placeholder="Buscar tarea..."
+      />
     </div>
   );
 }

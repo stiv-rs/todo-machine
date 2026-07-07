@@ -1,0 +1,82 @@
+.TodoItem {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 16px;
+  border-bottom: 1px solid var(--border);
+  transition: background 0.15s ease;
+}
+
+.TodoItem:last-child {
+  border-bottom: none;
+}
+
+.TodoItem:hover {
+  background: #fafaf9;
+}
+
+/* Botón de completado */
+.TodoItem__complete-btn {
+  flex-shrink: 0;
+  background: none;
+  border: 1.5px solid var(--border);
+  border-radius: 50%;
+  width: 22px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 11px;
+  color: transparent;
+  transition: border-color 0.2s ease, color 0.2s ease, background 0.2s ease;
+}
+
+.TodoItem__complete-btn:hover {
+  border-color: var(--accent-green);
+}
+
+/* Estado: completado */
+.TodoItem__complete-btn--completed {
+  border-color: var(--accent-green);
+  background: rgba(61, 170, 111, 0.08);
+  color: var(--accent-green);
+}
+
+/* Texto de la tarea */
+.TodoItem__text {
+  flex: 1;
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--text-primary);
+  line-height: 1.5;
+  transition: color 0.2s ease, text-decoration 0.2s ease;
+}
+
+/* Estado: texto completado */
+.TodoItem__text--completed {
+  text-decoration: line-through;
+  color: var(--text-secondary);
+}
+
+/* Botón eliminar */
+.TodoItem__delete-btn {
+  flex-shrink: 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 13px;
+  color: var(--text-secondary);
+  padding: 2px 4px;
+  border-radius: 4px;
+  opacity: 0;
+  transition: color 0.2s ease, opacity 0.2s ease;
+}
+
+.TodoItem:hover .TodoItem__delete-btn {
+  opacity: 1;
+}
+
+.TodoItem__delete-btn:hover {
+  color: var(--accent-red);
+}

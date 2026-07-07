@@ -1,0 +1,43 @@
+@keyframes popIn {
+  0%   { transform: scale(0.8) rotate(-45deg); opacity: 0; }
+  60%  { transform: scale(1.15) rotate(0deg); opacity: 1; }
+  100% { transform: scale(1) rotate(0deg); opacity: 1; }
+}
+
+.CreateTodoButton {
+  position: fixed;
+  bottom: 36px;
+  right: 36px;
+}
+
+.CreateTodoButton__btn {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  border: none;
+  background: var(--accent-teal);
+  color: #fff;
+  font-size: 26px;
+  line-height: 1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 16px rgba(42, 184, 164, 0.35);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.CreateTodoButton__btn:hover {
+  background: #23a694;
+  transform: scale(1.08);
+  box-shadow: 0 6px 22px rgba(42, 184, 164, 0.45);
+}
+
+.CreateTodoButton__btn:active {
+  transform: scale(0.95);
+}
+
+.CreateTodoButton__btn span {
+  display: inline-block;
+  animation: popIn 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+}

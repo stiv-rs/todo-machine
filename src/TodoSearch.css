@@ -1,0 +1,26 @@
+.TodoSearch {
+  margin-bottom: 24px;
+}
+
+.TodoSearch__input {
+  width: 100%;
+  padding: 10px 14px;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--text-primary);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.TodoSearch__input::placeholder {
+  color: var(--text-secondary);
+}
+
+.TodoSearch__input:focus {
+  border-color: var(--accent-teal);
+  box-shadow: 0 0 0 3px rgba(42, 184, 164, 0.1);
+}

@@ -1,0 +1,13 @@
+.TodoList {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+.TodoList ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}

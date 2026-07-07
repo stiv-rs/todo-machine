@@ -1,8 +1,12 @@
+import './CreateTodoButton.css';
+
 function CreateTodoButton() {
   return (
-    <button>
-      Crear Tarea
-    </button>
+    <div className="CreateTodoButton">
+      <button className="CreateTodoButton__btn" aria-label="Crear nueva tarea">
+        <span>+</span>
+      </button>
+    </div>
   );
 }
 
